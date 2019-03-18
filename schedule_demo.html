@@ -36,11 +36,9 @@
   <div id="day-schedule"></div>
 
   <script
-    src="https://code.jquery.com/jquery-1.11.2.min.js"
-    integrity="sha256-Ls0pXSlb7AYs7evhd+VLnWsZ/AqEHcXBeMZUycz/CcA="
-    crossorigin="anonymous"></script>
+    src="./public/javascripts/jquery-1.11.2.min.js"></script>
 
-    <script src="./picker.js"></script>
+    <script src="./public/javascripts/picker.js"></script>
 
     <br>
     <br>
@@ -71,20 +69,6 @@
         endTime: '21:00'
       });
       $("#day-schedule").on('selected.artsy.dayScheduleSelector', function (e, selected) {
-        var i;
-        for (i = 0; i < selected.length; i ++){
-          // console.log(selected[i]);
-          // console.log(selected[selected.length - 1]);
-          var currTime = selected[i].getAttribute("data-time");
-          var currDay = selected[i].getAttribute("data-day");
-          // console.log(currDay);
-          // console.log(currTime);
-          // console.log(typeof currDay);
-          // console.log(typeof currTime);
-
-          // dict[currDay].push(currTime);
-          // console.log(dict);
-        }
         });
 
 
@@ -94,7 +78,6 @@
         var res = "";
         var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
         for(i = 1; i < 8; i++){
-          console.log(currLayout[i]);
           if (currLayout[i] === undefined || currLayout[i].length == 0) {
               continue;
           } else {
@@ -107,7 +90,6 @@
             res += "<br>";
           }
         }
-        console.log(res);
         $("#updateMe").html(res);
       });
 
