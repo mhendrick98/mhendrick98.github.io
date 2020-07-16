@@ -5,3 +5,4 @@
 5. On research page, link to Paper
 6. On research page, link to Code
 7. Google Scholar
+8. Covid Project
