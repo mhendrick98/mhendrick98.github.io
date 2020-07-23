@@ -1,10 +1,3 @@
-1. Add page for Flask Auth workshop (workshop3)
-2. Add research to footer of each Page
-3. Add research to about me
-4. Complete research information
-5. On research page, link to Paper
-6. On research page, link to Code
-7. Google Scholar
-8. Covid Project
-9. Dog Project
-10. Study Group Link
+1. Covid Project
+2. Dog Project
+3. Study Group Link
