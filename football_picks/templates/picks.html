@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Picks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Week XXX</h1>
+      {% if error %}
+      <h2>{{error}}</h2>
+      {% endif %}
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Away Team</th>
+            <th>Spread</th>
+            <th>Home Team</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for game in games %}
+          <tr>
+            <td>{{game["teams"][1]}} <div class="checkbox-inline"><label><input type="checkbox"></label></div></td>
+            <td>{{game["spread"]}}</td>
+            <td>{{game["teams"][0]}} <div class="checkbox-inline"><label><input type="checkbox"></label></div></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      
+    </div>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
