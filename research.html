@@ -1,133 +1,52 @@
-<!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Research — Michael Hendrick</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Research</h1>
 
-<html>
+    <div class="research-item">
+      <h3>DEBS 2020 Grand Challenge</h3>
+      <p class="meta">
+        Co-authored with
+        <a href="https://desilva.codes">Manuja DeSilva</a>
+      </p>
+      <p>
+        Technical details of an approach to the DEBS 2020 challenge on
+        Non-Intrusive Load Monitoring (NILM) and data streaming. Highlights
+        Apache Flink for processing large datasets, implements DBSCAN clustering,
+        and presents an approach for handling out-of-order events in a data
+        stream.
+      </p>
+      <p>
+        <a href="https://dl.acm.org/doi/abs/10.1145/3401025.3401759">Paper</a>
+        ·
+        <a href="https://www.youtube.com/watch?v=D5nxfyk6GtA">Video</a>
+      </p>
+    </div>
 
-<head>
-  <title>Research</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-  <link rel="stylesheet" href="./public/stylesheets/main.css"/>
-  <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-  <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-  <noscript><link rel="stylesheet" href="./public/stylesheets/noscript.css" /></noscript>
-</head>
+    <div class="research-item">
+      <h3>Obsidian (formerly Manos)</h3>
+      <p class="meta">
+        Co-authored with
+        <a href="https://desilva.codes">Manuja DeSilva</a>
+      </p>
+      <p>
+        A command-line tool to simulate workloads on RocksDB, tune parameters,
+        and run benchmarking experiments to test RocksDB's default guarantees
+        and devise configurations for different workload types.
+      </p>
+      <p>
+        <a href="assets/CS591A1___Data_Systems_Architectures.pdf">Paper</a>
+        ·
+        <a href="https://github.com/mdesilva/Manos">Code</a>
+      </p>
+    </div>
 
-<body class="is-loading">
-
-  <!-- Wrapper -->
-  <div id="wrapper">
-    <!-- Main -->
-    <section id="main">
-      <header>
-        <h1>Research</h1>
-      </header>
-      <div class="container">
-
-
-        <!-- Project One -->
-        <div class="row">
-          <div class="col-md-5">
-            <h2>DEBS 2020 Grand Challenge</h3>
-            <h4>Co-Authored with <a href="https://desilva.codes">Manuja DeSilva</a></h2>
-            <p>This paper entails the technical details of an approach to the challenge presented by the DEBS 2020 committee, regarding Non-Intrusive Load Monitoring (NILM) and its relevance in the area of data streaming. Our project highlights how the open source project Apache Flink can provide an efficient solution for processing large data-sets. Furthermore, we implement a version of DBSCAN, a data clustering algorithm, and we present an effective approach for handling out of order events in a data stream. We observe that our approach strikes a balance between optimization, usability, and accuracy with room for future work. We propose a complete solution that is capable of detecting appliance power events and energy consumption by using a stream of voltage and current data.</p>
-            <a class="btn btn-primary" href="https://dl.acm.org/doi/abs/10.1145/3401025.3401759">View Paper</a> | <a class="btn btn-primary" href="https://www.youtube.com/watch?v=D5nxfyk6GtA&feature=youtu.be">View Video</a>
-
-          </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Two -->
-        <div class="row">
-          <div class="col-md-5">
-            <h2>Obsidian (Formally Manos)</h3>
-            <h4>Co-Authored with <a href="https://desilva.codes">Manuja DeSilva</a></h2>
-            <p>RocksDB is an in-memory database that is built using the concept of LSM(log-structured-merge) trees. Out of the box, it provides some guarantees, such as that its default parameters are suitable for most workloads. In addition, it also provides many knobs that can be adjusted by the user (the developer) to optimize the database for their particular workloads.
-We will build a command line interface tool to simulate workloads on RocksDB. We will include the ability to tune various parameters of RocksDB and run workloads using those parameter configurations. In addition to running these aggregated style experiments, we will also provide the ability to run individual experiments testing the affects of tuning one parameter on a dataset. Lastly, we will run our own benchmarking experiments using the CLI tool we built to test the guarantees cited by RocksDB, and devise our own parameter configurations that we predict are suitable for different types of workloads.</p>
-            <a class="btn btn-primary" href="../public/files/CS591A1___Data_Systems_Architectures.pdf">View Paper</a> | <a class="btn btn-primary" href="https://github.com/mdesilva/Manos">View Code</a>
-          </div>
-        </div>
-        <!-- /.row -->
-
-
-      <hr>
-
-      <!--
-						<hr />
-						<h2>Extra Stuff!</h2>
-						<form method="post" action="#">
-							<div class="field">
-								<input type="text" name="name" id="name" placeholder="Name" />
-							</div>
-							<div class="field">
-								<input type="email" name="email" id="email" placeholder="Email" />
-							</div>
-							<div class="field">
-								<div class="select-wrapper">
-									<select name="department" id="department">
-										<option value="">Department</option>
-										<option value="sales">Sales</option>
-										<option value="tech">Tech Support</option>
-										<option value="null">/dev/null</option>
-									</select>
-								</div>
-							</div>
-							<div class="field">
-								<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-							</div>
-							<div class="field">
-								<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
-							</div>
-							<div class="field">
-								<label>But are you a robot?</label>
-								<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
-								<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
-							</div>
-							<ul class="actions">
-								<li><a href="#" class="button">Get Started</a></li>
-							</ul>
-						</form>
-						<hr />
-						-->
-      <footer>
-        <h1><a href="./index.html">Home</a> | <a href="./aboutMe.html">About Me</a> | <a href="./projects.html">Projects</a> | <a href="./workshops.html">Workshops</a> | <a href="./blog.html">Blog</a></h1>
-      </footer>
-
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer">
-      <ul class="copyright">
-        <li style="color:black"> Design inspired by <a href="http://html5up.net">HTML5 UP</a></li>
-      </ul>
-    </footer>
-
-  </div>
-
-  <!-- Scripts -->
-  <!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-  <script>
-  if ("addEventListener" in window) {
-  window.addEventListener("load", function() {
-    document.body.className = document.body.className.replace(
-      /\bis-loading\b/,
-      ""
-    );
-  });
-  document.body.className += navigator.userAgent.match(/(MSIE|rv:11\.0)/)
-    ? " is-ie"
-    : "";
-}
-</script>
-
-
-</body>
-
+    <p class="back"><a href="index.html">← Home</a></p>
+  </body>
 </html>

@@ -1,138 +1,33 @@
-<!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog — Michael Hendrick</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Blog</h1>
 
-<html>
-
-<head>
-  <title>Blog</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-  <link rel="stylesheet" href="./public/stylesheets/main.css"/>
-  <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-  <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-  <noscript><link rel="stylesheet" href="./public/stylesheets/noscript.css" /></noscript>
-</head>
-
-<body class="is-loading">
-
-  <!-- Wrapper -->
-  <div id="wrapper">
-    <!-- Main -->
-    <section id="main">
-      <header>
-        <h1>Blog</h1>
-      </header>
-      <hr>
-
-      <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="post-preview">
-            <a href="blog2.html">
-              <h2 class="post-title">
-                Hyper 2, and why having an aesthetically pleasing Terminal is so important
-              </h2>
-            </a>
-            <a href="blog2.html">
-              <p class="post-subtitle">
-                It means more than just pretty colors, even though pretty colors are nice :P
-              </p>
-            </a>
-            <p class="post-meta">Posted on July 11, 2018</p>
-          </div>
-          <hr>
-          <div class="post-preview">
-            <a href="blog1.html">
-              <h2 class="post-title">
-                Hello World!
-              </h2>
-            </a>
-            <a href="blog1.html">
-              <p class="post-subtitle">
-                The first weekly entry in a blog about Tech, Culture, and Myself :)
-              </p>
-            </a>
-            <p class="post-meta">Posted on June 29, 2018</p>
-          </div>
-          <!-- Pager -->
-        </div>
-      </div>
+    <div class="blog-item">
+      <h3>
+        <a href="blog2.html"
+          >Hyper 2, and why having an aesthetically pleasing Terminal is so
+          important</a
+        >
+      </h3>
+      <p>It means more than just pretty colors, even though pretty colors are nice.</p>
+      <p class="meta">Posted on July 11, 2018</p>
     </div>
 
-      <!--
-						<hr />
-						<h2>Extra Stuff!</h2>
-						<form method="post" action="#">
-							<div class="field">
-								<input type="text" name="name" id="name" placeholder="Name" />
-							</div>
-							<div class="field">
-								<input type="email" name="email" id="email" placeholder="Email" />
-							</div>
-							<div class="field">
-								<div class="select-wrapper">
-									<select name="department" id="department">
-										<option value="">Department</option>
-										<option value="sales">Sales</option>
-										<option value="tech">Tech Support</option>
-										<option value="null">/dev/null</option>
-									</select>
-								</div>
-							</div>
-							<div class="field">
-								<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-							</div>
-							<div class="field">
-								<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
-							</div>
-							<div class="field">
-								<label>But are you a robot?</label>
-								<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
-								<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
-							</div>
-							<ul class="actions">
-								<li><a href="#" class="button">Get Started</a></li>
-							</ul>
-						</form>
-						<hr />
-						-->
-      <footer>
-        <h1><a href="./index.html">Home</a> | <a href="./aboutMe.html">About Me</a> | <a href="./research.html">Research</a> | <a href="./projects.html">Projects | <a href="./workshops.html">Workshops</a></h1>
-      </footer>
+    <div class="blog-item">
+      <h3><a href="blog1.html">Hello World!</a></h3>
+      <p>
+        The first weekly entry in a blog about Tech, Culture, and Myself.
+      </p>
+      <p class="meta">Posted on June 29, 2018</p>
+    </div>
 
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer">
-      <ul class="copyright">
-        <li style="color:black"> Design inspired by <a href="http://html5up.net">HTML5 UP</a></li>
-      </ul>
-    </footer>
-
-  </div>
-
-  <!-- Scripts -->
-  <!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-  <script>
-  if ("addEventListener" in window) {
-  window.addEventListener("load", function() {
-    document.body.className = document.body.className.replace(
-      /\bis-loading\b/,
-      ""
-    );
-  });
-  document.body.className += navigator.userAgent.match(/(MSIE|rv:11\.0)/)
-    ? " is-ie"
-    : "";
-}
-</script>
-
-
-</body>
-
+    <p class="back"><a href="index.html">← Home</a></p>
+  </body>
 </html>
